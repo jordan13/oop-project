@@ -48,7 +48,7 @@ print " Animal 1 is a " . $Fish->getName();
 ?>
 <!-- Example 2 -->
 <?php
-class Animal {
+class Animal2 {
 	public $firstName;
 	public $lastName;
 	public $scientificName;
@@ -70,7 +70,7 @@ return "This is my " . $this->firstName .
 	" and this is my scientific-name " . $this->scientificName . " .";
 	}
 }
-class  snake extends Animal {
+class  snake extends Animal2 {
 	function __construct($scientificName, $firstName, $lastName, $gender, $weight, $slither){
 		parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
 	$this->slither = $slither;
@@ -81,7 +81,7 @@ class  snake extends Animal {
 	}
 }
 
-class rat extends Animal {
+class rat extends Animal2 {
 	function __construct($scientificName, $firstName, $lastName, $gender, $weight, $squeak){
 		parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
 	$this->squeak = squeak;
@@ -92,8 +92,8 @@ class rat extends Animal {
 	}
 }
 
-$snake = new snake("snake", "Mellow", "RED", "female", 16, true);
-print " Animal 2 is a " . $snake->getName();
+$snake = new snake("snake", "Simon", "RED", "female", 16, true);
+print " Animal 1 is a " . $snake->getName();
 ?>
 <!-- Example 3  -->
 <?php
@@ -115,8 +115,8 @@ class Phone {
 
 function getName() {
 return "This is a " . $this->maker .
-	" and last " . $this->lastName .
-	" and this is a " . $this->model . " .";
+	" and last " . $this->carrier .
+	" and it is a  " . $this->model . " .";
 	}
 }
 class iphone extends Phone {
